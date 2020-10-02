@@ -1,0 +1,8 @@
+const SET_SELECTION_MENU = 'SET_SELECTION_MENU';
+
+
+
+
+export default {
+    SET_SELECTION_MENU,
+}

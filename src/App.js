@@ -31,6 +31,7 @@ function App() {
          random_item = birdsData[`${selection_tab_menu - 1}`][random_number];
     }
 
+
     const handleClickNext = () => {
         if (change_button_color === null) return;
         setSelectionMenu(checkSel(selection_tab_menu));
