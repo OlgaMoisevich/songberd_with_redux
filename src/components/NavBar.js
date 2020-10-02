@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
+import {useDispatch, useSelector} from "react-redux";
 
-const NavBar = (props) => {
 
-    const {select} = props;
+const NavBar = () => {
+    const select = useSelector(state=> state.header.selection_tab_menu);
+
     const default_data = [
         {id: 1, title: 'Разминка'},
         {id: 2, title: 'Воробьиные'},
@@ -12,7 +14,6 @@ const NavBar = (props) => {
         {id: 6, title: 'Морские птицы'},
     ];
     const [nav_bar_dafault_data] = useState(default_data);
-
 
     return (
         <div className="nav-bar">

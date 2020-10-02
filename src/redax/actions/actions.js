@@ -1,8 +1,6 @@
-const SET_SELECTION_MENU = 'SET_SELECTION_MENU';
 
 
+export function handlerNextNavbarTab() {
 
 
-export default {
-    SET_SELECTION_MENU,
 }

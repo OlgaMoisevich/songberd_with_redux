@@ -73,7 +73,7 @@ function App() {
         <div className="App">
             <header>
                 <LogoPanel scoreForLogoPanel={scoreForLogoPanel}/>
-                <NavBar select={selection_tab_menu}/>
+                <NavBar/>
             </header>
 
             {
@@ -96,6 +96,7 @@ function App() {
                         </div>
                         <button className='footer_button'
                                 onClick={handleClickNext}
+                                onClick={()=> dispatch(handlerNextNavbarTab())}
                                 style={change_button_color}
                         > Next Level
                         </button>
