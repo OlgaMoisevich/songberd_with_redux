@@ -6,12 +6,12 @@ const NavBar = () => {
     const select = useSelector(state=> state.header.selection_tab_menu);
 
     const default_data = [
-        {id: 1, title: 'Разминка'},
-        {id: 2, title: 'Воробьиные'},
-        {id: 3, title: 'Лесные птицы'},
-        {id: 4, title: 'Певчие птицы'},
-        {id: 5, title: 'Хищные птицы'},
-        {id: 6, title: 'Морские птицы'},
+        {id: 0, title: 'Разминка'},
+        {id: 1, title: 'Воробьиные'},
+        {id: 2, title: 'Лесные птицы'},
+        {id: 3, title: 'Певчие птицы'},
+        {id: 4, title: 'Хищные птицы'},
+        {id: 5, title: 'Морские птицы'},
     ];
     const [nav_bar_dafault_data] = useState(default_data);
 
