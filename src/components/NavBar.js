@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 
 
 const NavBar = () => {
-    const select = useSelector(state=> state.header.selection_tab_menu);
+    const select = useSelector(state => state.header.selection_tab_menu);
 
     const default_data = [
         {id: 0, title: 'Разминка'},
