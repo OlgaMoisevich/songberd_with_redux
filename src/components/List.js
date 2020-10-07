@@ -3,10 +3,11 @@ import './../App.css';
 import sound_err from './../assets/zapsplat_multimedia_game_error_tone_007_24925.mp3'
 import sound_ok from './../assets/little_robot_sound_factory_Jingle_Win_Synth_01.mp3'
 import {useDispatch, useSelector} from "react-redux";
-import {clickOnBirds, pickBird, setGuessRandom} from "../redax/actions/actions";
+import {clickOnBirds, pickBird, setAccumScore, setGuessRandom, setTotalScore} from "../redax/actions/actions";
 
 const List = (props) => {
     const [background, setBackground] = useState(null);
+    const [accState, setAccState] = useState(5);
     const {item}= props;
 
     const dispatch = useDispatch();
@@ -37,9 +38,11 @@ const List = (props) => {
             setBackground({backgroundColor: '#00bc8c'});
             dispatch(setGuessRandom(item));
             set_data_for_audio(sound_ok, audio_teg);
+            dispatch(setTotalScore());
         } else {
             setBackground({backgroundColor: 'red'});
-            set_data_for_audio(sound_err, audio_teg)
+            set_data_for_audio(sound_err, audio_teg);
+            dispatch(setAccumScore(1))
         }
     };
 

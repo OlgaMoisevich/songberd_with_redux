@@ -4,7 +4,10 @@ import {
     SET_SELECTION_MENU,
     SET_GUESS_ITEM,
     CLICK_ON_BIRDS,
-    PICK_BIRD
+    PICK_BIRD,
+    SET_ACCUM_SCORE, SET_TOTAL_SCORE,
+
+
 } from "../types_action";
 
 
@@ -43,6 +46,19 @@ export function clickOnBirds(item) {
 export function pickBird(item) {
     return {
         type: PICK_BIRD,
+        payload: item,
+    }
+}
+
+export function setAccumScore(item) {
+    return {
+        type: SET_ACCUM_SCORE,
+        payload: item,
+    }
+}
+export function setTotalScore(item) {
+    return {
+        type: SET_TOTAL_SCORE,
         payload: item,
     }
 }

@@ -4,3 +4,5 @@ export const SET_RANDOM_NUMBER = 'SET_RANDOM_NUMBER';
 export const SET_GUESS_ITEM = 'SET_GUESS_ITEM';
 export const CLICK_ON_BIRDS = 'CLICK_ON_BIRDS';
 export const PICK_BIRD = 'SET_CLICK_ITEM';
+export const SET_ACCUM_SCORE = 'SET_ACCUM_SCORE';
+export const SET_TOTAL_SCORE = 'SET_TOTAL_SCORE';

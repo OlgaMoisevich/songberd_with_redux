@@ -20,7 +20,7 @@ import './../App.css';
 import {useDispatch, useSelector} from "react-redux";
 import {setNewGame} from "../redax/actions/actions";
 
-const Finish = (props) => {
+const Finish = () => {
     const dispatch = useDispatch();
     return (
         <div className='finish-block'>
