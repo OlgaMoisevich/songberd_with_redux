@@ -27,9 +27,9 @@ const headerReducer = (state = initialState, action) => {
             let check = state.selection_tab_menu === 6 ? 0 : state.selection_tab_menu + 1;
             return {...state, selection_tab_menu: check};
         case SET_NEW_GAME:
-            return {...state, selection_tab_menu: 0};
+            return {...state, selection_tab_menu: 0, total_score_on_panel: 0};
         case SET_RANDOM_NUMBER:
-            return {...state, random_number: setRandomItem()};
+            return {...state, random_number: setRandomItem(), accScore: 5};
         case SET_GUESS_ITEM:
             return {...state, bird_picture_name: action['payload']};
         case CLICK_ON_BIRDS:

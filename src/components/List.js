@@ -7,7 +7,6 @@ import {clickOnBirds, pickBird, setAccumScore, setGuessRandom, setTotalScore} fr
 
 const List = (props) => {
     const [background, setBackground] = useState(null);
-    const [accState, setAccState] = useState(5);
     const {item}= props;
 
     const dispatch = useDispatch();
